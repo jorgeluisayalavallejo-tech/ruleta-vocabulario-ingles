@@ -1,0 +1,14 @@
+* { box-sizing: border-box; }
+body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:#f5f7fb; color:#222; margin:0; padding:2rem; }
+.container{ max-width:720px; margin:0 auto; text-align:center; }
+h1{ margin-bottom:1rem; }
+.roulette{ display:flex; align-items:center; justify-content:center; height:160px; }
+.display{ width:320px; height:120px; border-radius:12px; background:linear-gradient(180deg,#fff,#eef2ff); display:flex; align-items:center; justify-content:center; font-size:1.6rem; box-shadow:0 6px 18px rgba(20,30,80,0.08); padding:1rem; }
+.controls{ margin-top:1rem; display:flex; gap:0.5rem; justify-content:center; }
+button{ padding:0.6rem 1rem; font-size:1rem; border-radius:8px; border:1px solid #2b63ff; background:#3b74ff; color:#fff; cursor:pointer; }
+button:disabled{ opacity:0.5; cursor:not-allowed; }
+.counters{ margin-top:1rem; display:flex; gap:1.2rem; justify-content:center; font-size:1rem; }
+.message{ margin-top:0.8rem; min-height:1.2rem; color:#0b5; font-weight:600; }
+.nota{ margin-top:1rem; color:#666; font-size:0.9rem; }
+
+@media (max-width:520px){ .display{ width:260px; font-size:1.2rem; } button{ font-size:0.9rem; } }

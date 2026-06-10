@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ruleta de Vocabulario en Inglés</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Ruleta de Vocabulario en Inglés</h1>
+
+    <div class="roulette">
+      <div id="display" class="display">Pulsa "Girar"</div>
+    </div>
+
+    <div class="controls">
+      <button id="spinBtn">Girar</button>
+      <button id="listenBtn" disabled>Repetir</button>
+      <button id="startRecBtn" disabled>Escuchar</button>
+    </div>
+
+    <div class="counters">
+      <div><strong>Aciertos:</strong> <span id="correct">0</span></div>
+      <div><strong>Errores:</strong> <span id="incorrect">0</span></div>
+    </div>
+
+    <div id="message" class="message"></div>
+    <p class="nota">Recomendado usar Chrome o Edge para compatibilidad con reconocimiento de voz.</p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
